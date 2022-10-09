@@ -1,0 +1,130 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-10-09T12:41:06.601Z",
+        "line": 4,
+        "name": "positive login test",
+        "description": "",
+        "id": "cydeo-login-practice;positive-login-test",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10037709400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user go to the login page",
+            "match": {
+              "location": "Step_Definitions.LoginTest.user_go_to_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1094897700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters correct credentials",
+            "match": {
+              "location": "Step_Definitions.LoginTest.user_enters_correct_credentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[Secure Area]\u003e but was:\u003c[Login Page]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat Step_Definitions.LoginTest.user_should_be_in(LoginTest.java:33)\r\n\tat ✽.user should be in \"Secure Area\"(file:///C:/Users/omert/IdeaProjects/EU_Fast_Track_Cucumber/src/test/Resources/Features/Login.feature:7)\r\n",
+              "duration": 1074100700,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "user should be in \"Secure Area\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Secure Area\"",
+                  "offset": 18
+                }
+              ],
+              "location": "Step_Definitions.LoginTest.user_should_be_in(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-09T12:41:20.519Z",
+        "line": 10,
+        "name": "negative login test",
+        "description": "",
+        "id": "cydeo-login-practice;negative-login-test",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 239380400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user go to the login page",
+            "match": {
+              "location": "Step_Definitions.LoginTest.user_go_to_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 798107800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user enters wrong credentials",
+            "match": {
+              "location": "Step_Definitions.LoginTest.user_enters_wrong_credentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 49864300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user should be at \"Login Page\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Login Page\"",
+                  "offset": 18
+                }
+              ],
+              "location": "Step_Definitions.LoginTest.user_should_be_at(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Cydeo Login Practice",
+    "description": "",
+    "id": "cydeo-login-practice",
+    "keyword": "Feature",
+    "uri": "file:src/test/Resources/Features/Login.feature",
+    "tags": []
+  }
+]
