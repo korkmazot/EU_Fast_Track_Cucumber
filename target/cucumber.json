@@ -3,54 +3,93 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-10-09T12:41:06.601Z",
-        "line": 4,
-        "name": "positive login test",
+        "start_timestamp": "2022-10-09T20:50:55.401Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4668032100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Step_Definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Compare name of user",
         "description": "",
-        "id": "cydeo-login-practice;positive-login-test",
+        "id": "user-name-and-last-name-should-be-correct;compare-name-of-user;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1602457900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Step_Definitions.Hooks.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 10037709400,
+              "duration": 3257241600,
               "status": "passed"
             },
             "line": 5,
-            "name": "user go to the login page",
+            "name": "user at login page",
             "match": {
-              "location": "Step_Definitions.LoginTest.user_go_to_the_login_page()"
+              "location": "Step_Definitions.VyTrackLoginStepDef.user_at_login_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1094897700,
+              "duration": 21062490000,
               "status": "passed"
             },
             "line": 6,
-            "name": "user enters correct credentials",
+            "name": "user login using below credentials",
             "match": {
-              "location": "Step_Definitions.LoginTest.user_enters_correct_credentials()"
+              "location": "Step_Definitions.NamesStepDef.user_login_using_below_credentials(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
             },
+            "rows": [
+              {
+                "cells": [
+                  "user",
+                  "user1"
+                ]
+              },
+              {
+                "cells": [
+                  "password",
+                  "UserUser123"
+                ]
+              }
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "error_message": "org.junit.ComparisonFailure: expected:\u003c[Secure Area]\u003e but was:\u003c[Login Page]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat Step_Definitions.LoginTest.user_should_be_in(LoginTest.java:33)\r\n\tat ✽.user should be in \"Secure Area\"(file:///C:/Users/omert/IdeaProjects/EU_Fast_Track_Cucumber/src/test/Resources/Features/Login.feature:7)\r\n",
-              "duration": 1074100700,
-              "status": "failed"
+              "duration": 2086982300,
+              "status": "passed"
             },
-            "line": 7,
-            "name": "user should be in \"Secure Area\"",
+            "line": 9,
+            "name": "user \"John\" and \"Doe\" should be correct",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Secure Area\"",
-                  "offset": 18
+                  "val": "\"John\"",
+                  "offset": 5
+                },
+                {
+                  "val": "\"Doe\"",
+                  "offset": 16
                 }
               ],
-              "location": "Step_Definitions.LoginTest.user_should_be_in(java.lang.String)"
+              "location": "Step_Definitions.NamesStepDef.user_and_should_be_correct(java.lang.String,java.lang.String)"
             },
             "keyword": "Then "
           }
@@ -62,53 +101,192 @@
         ]
       },
       {
-        "start_timestamp": "2022-10-09T12:41:20.519Z",
-        "line": 10,
-        "name": "negative login test",
+        "start_timestamp": "2022-10-09T20:51:28.319Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3711951100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Step_Definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Compare name of user",
         "description": "",
-        "id": "cydeo-login-practice;negative-login-test",
+        "id": "user-name-and-last-name-should-be-correct;compare-name-of-user;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1949207800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Step_Definitions.Hooks.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 239380400,
+              "duration": 4620081400,
               "status": "passed"
             },
-            "line": 11,
-            "name": "user go to the login page",
+            "line": 5,
+            "name": "user at login page",
             "match": {
-              "location": "Step_Definitions.LoginTest.user_go_to_the_login_page()"
+              "location": "Step_Definitions.VyTrackLoginStepDef.user_at_login_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 798107800,
+              "duration": 1857096900,
               "status": "passed"
             },
-            "line": 12,
-            "name": "user enters wrong credentials",
+            "line": 6,
+            "name": "user login using below credentials",
             "match": {
-              "location": "Step_Definitions.LoginTest.user_enters_wrong_credentials()"
+              "location": "Step_Definitions.NamesStepDef.user_login_using_below_credentials(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
             },
+            "rows": [
+              {
+                "cells": [
+                  "user",
+                  "salesmanager101"
+                ]
+              },
+              {
+                "cells": [
+                  "password",
+                  "UserUser123"
+                ]
+              }
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 49864300,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: expected:\u003c[John, Doe]\u003e but was:\u003c[]\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:120)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat Step_Definitions.NamesStepDef.user_and_should_be_correct(NamesStepDef.java:26)\r\n\tat ✽.user \"John\" and \"Doe\" should be correct(file:///C:/Users/omert/IdeaProjects/EU_Fast_Track_Cucumber/src/test/Resources/Features/Names.feature:9)\r\n",
+              "duration": 2351892600,
+              "status": "failed"
             },
-            "line": 13,
-            "name": "user should be at \"Login Page\"",
+            "line": 9,
+            "name": "user \"John\" and \"Doe\" should be correct",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Login Page\"",
-                  "offset": 18
+                  "val": "\"John\"",
+                  "offset": 5
+                },
+                {
+                  "val": "\"Doe\"",
+                  "offset": 16
                 }
               ],
-              "location": "Step_Definitions.LoginTest.user_should_be_at(java.lang.String)"
+              "location": "Step_Definitions.NamesStepDef.user_and_should_be_correct(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-09T20:51:42.878Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2828288100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Step_Definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Compare name of user",
+        "description": "",
+        "id": "user-name-and-last-name-should-be-correct;compare-name-of-user;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 1553174200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Step_Definitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5003905600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user at login page",
+            "match": {
+              "location": "Step_Definitions.VyTrackLoginStepDef.user_at_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 17472344400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user login using below credentials",
+            "match": {
+              "location": "Step_Definitions.NamesStepDef.user_login_using_below_credentials(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "user",
+                  "storemanager85"
+                ]
+              },
+              {
+                "cells": [
+                  "password",
+                  "UserUser123"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2078867000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user \"John\" and \"Doe\" should be correct",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"John\"",
+                  "offset": 5
+                },
+                {
+                  "val": "\"Doe\"",
+                  "offset": 16
+                }
+              ],
+              "location": "Step_Definitions.NamesStepDef.user_and_should_be_correct(java.lang.String,java.lang.String)"
             },
             "keyword": "Then "
           }
@@ -120,11 +298,11 @@
         ]
       }
     ],
-    "name": "Cydeo Login Practice",
+    "name": "user name and last name should be correct",
     "description": "",
-    "id": "cydeo-login-practice",
+    "id": "user-name-and-last-name-should-be-correct",
     "keyword": "Feature",
-    "uri": "file:src/test/Resources/Features/Login.feature",
+    "uri": "file:src/test/Resources/Features/Names.feature",
     "tags": []
   }
 ]
